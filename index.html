@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Enyakinhurdaalan | İstanbul En Yakın Hurdacı - Adresten Nakit Hurda Alımı</title>
+    <meta name="description" content="İstanbul Beyoğlu, Beşiktaş, Şişli, Kadıköy, Üsküdar, Bakırköy, Bağcılar, Esenler, Başakşehir ve 21 ilçede 7/24 en yakın hurdacı hizmeti. Bakır, kablo, alüminyum, demir, sarı alımı. Anında nakit ödeme ve adreste hassas tartım!">
+    <meta name="keywords" content="en yakın hurdacı, istanbul hurdacı, beyoğlu hurdacı, beşiktaş hurdacı, şişli hurdacı, kadıköy hurdacı, bakır hurda alanlar, kablo hurdası fiyatı, adresten hurda alımı, zeytinburnu hurdacı, bağcılar hurdacı, esenler hurdacı, başakşehir hurdacı, sultangazi hurdacı, bayrampaşa hurdacı, güngören hurdacı, arnavutköy hurdacı">
+    
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:title" content="Enyakinhurdaalan | İstanbul En Yakın Hurdacı">
+    <meta property="og:description" content="İstanbul genelinde 7/24 adresten nakit hurda alımı. Hassas kantar, anında ödeme.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E♻️%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Enyakinhurdaalan", "description": "İstanbul'da adresten nakit hurda alımı yapan mobil hurdacı hizmeti.", "telephone": "+905384655162", "areaServed": {"@type": "City", "name": "İstanbul"}, "openingHours": "Mo-Su 00:00-23:59"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Adresten hurda alımı için ekstra yol veya taşıma ücreti alıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, ekstra nakliye, hammaliye veya yol ücreti talep etmiyoruz. Mobil ekibimiz adresinize gelir, yükleme ve tartım işlemlerini ücretsiz yapar."}}, {"@type": "Question", "name": "Ödeme ne zaman ve nasıl yapılır?", "acceptedAnswer": {"@type": "Answer", "text": "Tartım tamamlandığı anda dilerseniz peşin nakit, dilerseniz FAST/EFT ile ödeme yapılır."}}, {"@type": "Question", "name": "En az kaç kilo hurda alıyorsunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Bakır, kablo, sarı, alüminyum gibi maden grubunda küçük miktarlardan tonajlı alımlara kadar hizmet veriyoruz."}}, {"@type": "Question", "name": "Pazar günleri veya mesai saatleri dışında çalışıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Evet, 7/24 çalışıyoruz. Pazar ve resmi tatiller dahil dilediğiniz gün ve saatte randevu oluşturabilirsiniz."}}]}]</script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            amber: '#f59e0b',
+                            amberDark: '#d97706',
+                            metalDark: '#0f172a',
+                            metalCard: '#1e293b',
+                            accentGreen: '#22c55e',
+                            accentGreenDark: '#16a34a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome & Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
+        body { font-family: 'Inter', sans-serif; overflow-x: clip; }
+        .safe-bottom { padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px)) !important; }
+        #districtTabs::-webkit-scrollbar { display: none; }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f172a 100%);
+        }
+        .pulse-btn {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .pulse-amber {
+            animation: pulse-amber-glow 2s infinite;
+        }
+        @keyframes pulse-amber-glow {
+            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(245, 158, 11, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-900 pb-24 md:pb-0">
+
+    <!-- TOP BAR INFO -->
+    <div class="bg-amber-500 text-slate-950 font-bold text-xs md:text-sm py-1.5 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="flex items-center gap-1.5 justify-center w-full md:w-auto">
+                <i class="fa-solid fa-truck-fast"></i> 7/24 İstanbul Mobil Hurdacı Aracı Adresinizde!
+            </span>
+            <span class="hidden md:inline-flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved"></i> En Yüksek Fiyat Garantisi & Hassas Kantar
+            </span>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 text-xl font-black shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+                <div>
+                    <span class="text-base sm:text-xl font-black tracking-tight text-white block leading-none">
+                        ENYAKIN<span class="text-amber-500">HURDAALAN</span>
+                    </span>
+                    <span class="text-[10px] text-slate-400 tracking-wider uppercase font-semibold">İstanbul Mobil Hurda Alımı</span>
+                </div>
+            </a>
+
+            <!-- Nav Links Desktop -->
+            <nav aria-label="Ana menü" class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#hizmetler" class="hover:text-amber-400 transition-colors">Hizmetlerimiz</a>
+                <a href="#hesaplayici" class="hover:text-amber-400 transition-colors">Fiyat Hesapla</a>
+                <a href="#bolgeler" class="hover:text-amber-400 transition-colors">Hizmet Bölgeleri</a>
+                <a href="#makale" class="hover:text-amber-400 transition-colors">Rehber</a>
+                <a href="#sss" class="hover:text-amber-400 transition-colors">S.S.S.</a>
+            </nav>
+
+            <!-- Header CTA Buttons -->
+            <div class="flex items-center gap-2">
+                <a href="https://wa.me/905384655162?text=Merhaba,%20hurda%20satmak%20istiyorum.%20Fiyat%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg text-sm transition-all shadow-md">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+905384655162" class="hidden sm:inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2 px-4 rounded-lg text-sm transition-all shadow-lg pulse-amber">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0538 465 51 62</span>
+                </a>
+                <button id="menuBtn" type="button" onclick="toggleMenu()" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden w-10 h-10 rounded-lg border border-slate-700 text-slate-200 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-800 bg-slate-900">
+            <nav aria-label="Mobil menü" class="max-w-7xl mx-auto px-4 py-2 flex flex-col text-sm font-semibold text-slate-200">
+                <a href="#hizmetler" onclick="toggleMenu(false)" class="py-3 border-b border-slate-800">Hizmetlerimiz</a>
+                <a href="#hesaplayici" onclick="toggleMenu(false)" class="py-3 border-b border-slate-800">Fiyat Hesapla</a>
+                <a href="#bolgeler" onclick="toggleMenu(false)" class="py-3 border-b border-slate-800">Hizmet Bölgeleri</a>
+                <a href="#makale" onclick="toggleMenu(false)" class="py-3 border-b border-slate-800">Rehber</a>
+                <a href="#sss" onclick="toggleMenu(false)" class="py-3">S.S.S.</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative gradient-bg py-12 md:py-20 border-b border-slate-800 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs md:text-sm font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                    İstanbul'un Tüm İlçelerinde 15 Dakikada Kapınızdayız
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
+                    İstanbul En Yakın Hurdacı <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">
+                        Adresten Anında Nakit
+                    </span> Hurda Alımı
+                </h1>
+
+                <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                    Bakır, kablo, alüminyum, demir, sarı (pirinç), paslanmaz, klima ve kombi hurdalarınızı <strong>güncel borsa değerinden</strong>, hassas dijital kantarımızla yerinde tartıp <strong>anında nakit</strong> olarak satın alıyoruz.
+                </p>
+
+                <!-- Quick Features Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-left">
+                    <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <i class="fa-solid fa-money-bill-wave text-amber-400 text-xl mb-1"></i>
+                        <p class="text-xs font-bold text-white">Anında Nakit</p>
+                        <p class="text-[11px] text-slate-400">Kapıda hemen ödeme</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <i class="fa-solid fa-scale-balanced text-amber-400 text-xl mb-1"></i>
+                        <p class="text-xs font-bold text-white">Şeffaf Tartım</p>
+                        <p class="text-[11px] text-slate-400">Hassas dijital kantar</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <i class="fa-solid fa-bolt text-amber-400 text-xl mb-1"></i>
+                        <p class="text-xs font-bold text-white">Hızlı Servis</p>
+                        <p class="text-[11px] text-slate-400">Anında adrese intikal</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <i class="fa-solid fa-clock text-amber-400 text-xl mb-1"></i>
+                        <p class="text-xs font-bold text-white">7/24 Hizmet</p>
+                        <p class="text-[11px] text-slate-400">Gece gündüz kesintisiz</p>
+                    </div>
+                </div>
+
+                <!-- Dual Action CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                    <a href="tel:+905384655162" class="flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-base sm:text-lg py-4 px-5 sm:px-8 rounded-xl shadow-2xl transition-all transform hover:-translate-y-1">
+                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                        <span>HEMEN ARA: 0538 465 51 62</span>
+                    </a>
+                    <a href="https://wa.me/905384655162?text=Merhaba,%20hurdamın%20fotoğrafını%20gönderiyorum,%20fiyat%20verir%20misiniz?" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base sm:text-lg py-4 px-5 sm:px-8 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 pulse-btn">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Fotoğraf Gönder / Fiyat Al</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Interactive Quick Call Card -->
+            <div class="lg:col-span-5">
+                <div class="bg-slate-900/90 p-6 md:p-8 rounded-2xl border border-slate-800 shadow-2xl backdrop-blur-md">
+                    <div class="text-center mb-6">
+                        <span class="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Anında İletişim</span>
+                        <h2 class="text-2xl font-black text-white mt-2">Hurdanız İçin Teklif Alın</h2>
+                        <p class="text-slate-400 text-sm mt-1">Konumunuzu atın veya arayın, mobil aracımız hemen gelsin.</p>
+                    </div>
+
+                    <form onsubmit="handleQuickQuote(event)" class="space-y-4">
+                        <div>
+                            <label for="quickScrapType" class="block text-xs font-semibold text-slate-300 mb-1">Hurda Türü</label>
+                            <select id="quickScrapType" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-white focus:outline-none focus:border-amber-500 text-base sm:text-sm">
+                                <option value="Soyma Bakır / Kırma Bakır">Soyma / Kırma Bakır</option>
+                                <option value="Kablo Hurdası (Elektronik/Tesisat)">Kablo Hurdası</option>
+                                <option value="Alüminyum Hurdası">Alüminyum Hurdası</option>
+                                <option value="Sarı / Pirinç Hurdası">Sarı (Pirinç) Hurdası</option>
+                                <option value="Demir / İnşaat Hurdası">Demir / İnşaat Hurdası</option>
+                                <option value="Krom / Paslanmaz">Krom / Paslanmaz</option>
+                                <option value="Klima / Kombi / Beyaz Eşya">Klima & Kombi Hurdası</option>
+                                <option value="Diğer Toplu Hurda">Diğer Çeşitli Hurda</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="quickWeight" class="block text-xs font-semibold text-slate-300 mb-1">Yaklaşık Miktar (KG veya Tahmini)</label>
+                            <input type="text" id="quickWeight" placeholder="Örn: 50 kg veya 2 çuval" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 text-base sm:text-sm" required>
+                        </div>
+
+                        <div>
+                            <label for="quickLocation" class="block text-xs font-semibold text-slate-300 mb-1">Bulunduğunuz İlçe / Semt</label>
+                            <input type="text" id="quickLocation" placeholder="Örn: Beyoğlu Kasımpaşa veya Kadıköy Moda" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 text-base sm:text-sm" required>
+                        </div>
+
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp'tan Anında Fiyat Al</span>
+                        </button>
+                    </form>
+
+                    <div class="mt-4 text-center">
+                        <a href="tel:+905384655162" class="text-xs text-amber-400 hover:underline font-semibold flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-headset"></i> Doğrudan Müşteri Temsilcisini Ara: 0538 465 51 62
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACCEPTED SCRAP MATERIALS SECTION -->
+    <section id="hizmetler" class="py-16 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <p class="text-xs font-bold uppercase tracking-widest text-amber-500 mb-2">Hizmetlerimiz & Aldığımız Hurdalar</p>
+                <h2 class="text-3xl md:text-4xl font-black text-white">Yüksek Fiyattan Satın Aldığımız Hurda Çeşitleri</h2>
+                <p class="text-slate-400 text-sm md:text-base mt-2">İstanbul genelinde her nevi maden ve metal hurdasını güncel değerinde yerinden alıyoruz.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Soyma & Kırma Bakır Hurdası</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Soyma bakır, lama bakır, kırkambar, TTR kablo bakırı ve imalat artığı bakır hurdaları en yüksek kg fiyatıyla alıyoruz.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Bakır Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Kablo Hurdası Çeşitleri</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Tesisat kabloları, yeraltı enerji kabloları, karışık ev kabloları, internet ve telefon kablo hurdaları değerinde alınır.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Kablo Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Sarı (Pirinç) Hurdası</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Musluk, batarya, vanalar, oto radyatörü, sarı talaş ve dekoratif pirinç aksamlar anında nakit ödeme ile alınır.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Sarı Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-[#ffffff]"></i>
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Alüminyum & Profil Hurdası</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Araç jantları, alüminyum doğrama, profil, matbaa kalıbı, kutu alüminyum ve tel alüminyum adresten alınır.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Alüminyum Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Demir & İnşaat Hurdası</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Şantiye demiri, pik demir, dkp demir, sac hurdası, profil artıkları ve fabrika bozum demirleri yüksek tonajlı alınır.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Demir Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Kombi, Klima & Krom Paslanmaz</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Eski kombiler, salon/duvar tipi klimalar, krom tezgâhlar, 304 ve 316 kalite paslanmaz ürünler titizlikle alınır.</p>
+                    <a href="tel:+905384655162" class="text-amber-400 text-xs font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Klima/Kombi Fiyatı Sor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MATERIAL CALCULATOR & ESTIMATOR -->
+    <section id="hesaplayici" class="py-16 bg-slate-950 border-b border-slate-800 relative">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 rounded-3xl border border-slate-800 p-6 md:p-10 shadow-2xl">
+                <div class="text-center mb-8">
+                    <span class="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Canlı Tahmin & Hesaplama</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-white mt-2">Hurda Kazanç Hesaplayıcı</h2>
+                    <p class="text-slate-400 text-sm mt-1">Hurda türünüzü ve tahmini kilonuzu girin, yaklaşık kazancınızı görün ve hemen teklif isteyin!</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="calcMaterial" class="block text-xs font-bold text-slate-300 mb-1">Hurda Malzeme Tipi</label>
+                            <select id="calcMaterial" onchange="calculateEstimate()" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-white focus:outline-none focus:border-amber-500 text-base sm:text-sm">
+                                <option value="bakir" data-price="340">Soyma Bakır Hurdası (Yüksek Değer)</option>
+                                <option value="kablo" data-price="130">Karışık Kablo Hurdası</option>
+                                <option value="sari" data-price="210">Sarı / Pirinç Hurdası</option>
+                                <option value="aluminyum" data-price="85">Profil / Jant Alüminyum</option>
+                                <option value="krom" data-price="65">Paslanmaz Krom (304 Kalite)</option>
+                                <option value="demir" data-price="12">Ekstra DKP / İnşaat Demiri</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="calcWeight" class="block text-xs font-bold text-slate-300 mb-1">Tahmini Ağırlık (Kilogram - KG)</label>
+                            <input type="number" id="calcWeight" value="50" min="1" max="100000" inputmode="decimal" oninput="calculateEstimate()" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-white font-bold text-base focus:outline-none focus:border-amber-500">
+                        </div>
+
+                        <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800 text-xs text-slate-400 flex items-start gap-2">
+                            <i class="fa-solid fa-circle-info text-amber-400 text-sm mt-0.5"></i>
+                            <span>* Fiyatlar güncel borsa ve piyasa koşullarına göre tahminidir. Adreste dijital kantar tartımı sonrası net ödeme yapılır.</span>
+                        </div>
+                    </div>
+
+                    <!-- Output Card -->
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-amber-500/30 text-center space-y-4">
+                        <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block">Tahmini Toplam Kazancınız</span>
+                        <div class="text-4xl md:text-5xl font-black text-amber-400" id="calcResult">
+                            17.000 TL
+                        </div>
+                        <p class="text-xs text-slate-400" id="calcDetail">50 kg Soyma Bakır için Ortalama Tahmin</p>
+
+                        <button type="button" onclick="sendCalcToWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Bu Fiyattan Kapıma Araç İste</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC LOCAL SEO HUB & DISTRICT / NEIGHBORHOOD EXPLORER -->
+    <section id="bolgeler" class="py-16 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">İlçe & Mahalle Hizmet Ağı</span>
+                <h2 class="text-3xl md:text-4xl font-black text-white mt-2">İstanbul Yerel Hurdacı Hizmet Bölgelerimiz</h2>
+                <p class="text-slate-400 text-sm md:text-base mt-2">Aşağıdan ilçenizi seçin; mahallenize özel 15 dakikada adrese ulaşan hurdacı ekibimizin detaylarını görün!</p>
+            </div>
+
+            <!-- District Selection Tabs Grid -->
+            <div class="relative flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center sm:overflow-visible -mx-4 px-4 py-2 sm:mx-0 sm:px-0 mb-6 sm:mb-8" id="districtTabs">
+                <!-- Tabs will be rendered via Javascript -->
+            </div>
+
+            <!-- Dynamic Neighborhood & Localized SEO Display Box -->
+            <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden" id="districtSEOContent">
+                <!-- Content inserted via JS dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE SEO ARTICLE SECTION -->
+    <section id="makale" class="py-16 bg-slate-950 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <article class="max-w-none space-y-6 text-slate-300 leading-relaxed text-sm md:text-base">
+                
+                <header class="border-b border-slate-800 pb-6 text-center md:text-left">
+                    <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Rehber & Kurumsal Bilgilendirme</span>
+                    <h2 class="text-2xl md:text-4xl font-black text-white mt-2">İstanbul'da En Yakın Hurdacı Hizmeti ve Adresten Hurda Alım Süreci</h2>
+                </header>
+
+                <p>
+                    İstanbul gibi metropol şehirlerde hurda satışı yapmak hem çevreye katkı sağlamak hem de atıl durumdaki madenleri nakit paraya dönüştürmek için en etkili yoldur. Ancak doğru fiyatı almak, hassas tartım yaptırmak ve adresten hızlı hizmet alabilmek için güvenilir bir hurdacı ile çalışmak hayati önem taşır. <strong>Enyakinhurdaalan</strong> olarak İstanbul’un Avrupa ve Anadolu yakasındaki 21 ilçede ve bu ilçelere bağlı tüm mahallelerde 7 gün 24 saat kesintisiz mobil hurda alım hizmeti veriyoruz.
+                </p>
+
+                <h3 class="text-xl md:text-2xl font-bold text-white pt-2 text-amber-400">Adresten Hurda Alımı Nasıl Çalışır?</h3>
+                <p>
+                    Geleneksel hurdacılık anlayışını modern mobil araç filomuzla yeniden şekillendiriyoruz. Süreç şu basit 3 adımda gerçekleşir:
+                </p>
+                <ol class="list-decimal pl-6 space-y-2 text-slate-300">
+                    <li><strong>İletişim ve Fotoğraf Gönderimi:</strong> Elinizdeki hurdanın fotoğrafını veya videosunu <strong>0538 465 51 62</strong> numaralı WhatsApp hattımıza iletirsiniz.</li>
+                    <li><strong>Anında Fiyat Teklifi:</strong> Uzman ekibimiz güncel Londra Metal Borsası (LME) ve serbest piyasa verilerine göre malzemenize en yüksek kg fiyatını teklif eder.</li>
+                    <li><strong>Adreste Tartım ve Nakit Ödeme:</strong> Onayınızın ardından bulunduğunuz mahalleye en yakın mobil aracımız 15 ila 30 dakika içerisinde adresinize ulaşır. Hassas elektronik kantar ile yanınızda tartım yapılır ve anında nakit ödeme teslim edilir.</li>
+                </ol>
+
+                <h3 class="text-xl md:text-2xl font-bold text-white pt-2 text-amber-400">Hurda Fiyatları Neye Göre Belirlenir?</h3>
+                <p>
+                    Hurda metal ve maden fiyatları değişken bir yapıya sahiptir. Bakır, alüminyum, sarı (pirinç), demir, kablo ve krom fiyatlarını belirleyen ana unsurlar şunlardır:
+                </p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Metal Saflık Derecesi:</strong> Örneğin soyma bakır ile yanmış kırma bakır veya %30 bakır oranlı tesisat kablosunun birim fiyatı farklıdır.</li>
+                    <li><strong>Piyasa ve Borsa Verileri:</strong> Küresel hammadde talebi ve döviz kurları günlük hurda fiyatlarını doğrudan etkiler.</li>
+                    <li><strong>Miktar ve Tonaj:</strong> Yüksek tonajlı şantiye veya fabrika hurdalarında özel toptan fiyatlandırma uygulanmaktadır.</li>
+                </ul>
+
+                <div class="bg-slate-900 border-l-4 border-amber-500 p-4 rounded-r-xl my-6">
+                    <p class="font-bold text-white text-base">⚠️ Dikkat Edilmesi Gerekenler:</p>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1">Hurdalarınızı satarken merdiven altı, kantarda hile yapan veya adrese gelemeyen aracılara itibar etmeyiniz. Enyakinhurdaalan garantisi ile dijital kantarımız gözünüzün önünde tartılır ve ödemeniz tek kuruş eksiksiz yapılır.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION WITH SCHEMA SUPPORT -->
+    <section id="sss" class="py-16 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <span class="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sıkça Sorulan Sorular</span>
+                <h2 class="text-3xl font-black text-white mt-2">Aklınıza Takılan Sorular</h2>
+                <p class="text-slate-400 text-sm mt-1">Hurda satışı ile ilgili merak ettiğiniz tüm yanıtlar burada.</p>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(1)" aria-expanded="false" aria-controls="faq-1" class="w-full p-5 gap-3 text-left font-bold text-white flex justify-between items-center hover:text-amber-400 transition-colors">
+                        <span>Adresten hurda alımı için ekstra yol veya taşıma ücreti alıyor musunuz?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform id-icon-1"></i>
+                    </button>
+                    <div id="faq-1" class="hidden p-5 pt-0 text-slate-400 text-sm border-t border-slate-900 leading-relaxed">
+                        Hayır, kesinlikle ekstra nakliye, hammaliye veya yol ücreti talep etmiyoruz. Mobil ekibimiz adresinize kadar gelir, yükleme ve tartım işlemlerini tamamen ücretsiz gerçekleştirir.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(2)" aria-expanded="false" aria-controls="faq-2" class="w-full p-5 gap-3 text-left font-bold text-white flex justify-between items-center hover:text-amber-400 transition-colors">
+                        <span>Ödeme ne zaman ve nasıl yapılır?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform id-icon-2"></i>
+                    </button>
+                    <div id="faq-2" class="hidden p-5 pt-0 text-slate-400 text-sm border-t border-slate-900 leading-relaxed">
+                        Tartım işlemi tamamlandığı anda anında dilerseniz peşin NAKİT, dilerseniz hesabınıza anında FAST/EFT havale şeklinde ödemeniz yapılır.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(3)" aria-expanded="false" aria-controls="faq-3" class="w-full p-5 gap-3 text-left font-bold text-white flex justify-between items-center hover:text-amber-400 transition-colors">
+                        <span>En az kaç kilo hurda alıyorsunuz?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform id-icon-3"></i>
+                    </button>
+                    <div id="faq-3" class="hidden p-5 pt-0 text-slate-400 text-sm border-t border-slate-900 leading-relaxed">
+                        Maden grubunda (Bakır, Kablo, Sarı, Alüminyum vb.) küçük miktarlardan tonajlı alımlara kadar hizmet veriyoruz. Konumunuza göre mobil aracımızın rotasına bağlı olarak hemen alım sağlıyoruz.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(4)" aria-expanded="false" aria-controls="faq-4" class="w-full p-5 gap-3 text-left font-bold text-white flex justify-between items-center hover:text-amber-400 transition-colors">
+                        <span>Pazar günleri veya mesai saatleri dışında çalışıyor musunuz?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform id-icon-4"></i>
+                    </button>
+                    <div id="faq-4" class="hidden p-5 pt-0 text-slate-400 text-sm border-t border-slate-900 leading-relaxed">
+                        Evet, Enyakinhurdaalan 7/24 esasına göre çalışmaktadır. Pazar günleri ve resmi tatiller de dahil olmak üzere dilediğiniz gün ve saatte randevu oluşturabilirsiniz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <a href="#" class="flex items-center gap-2">
